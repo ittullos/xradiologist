@@ -1,0 +1,135 @@
+
+/* Jumbotron */
+
+.container-fluid .jumbotron, .container .jumbotron {
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-fluid .jumbotron, .container .jumbotron {
+      padding-left: 60px;
+      padding-right: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+      padding-bottom: 48px;
+      padding-top: 48px;
+  }
+}
+
+  
+.jumbotron {
+  background-color: #eee;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+body, html {
+  height: 100%;
+}
+.bg {
+  background-image: url("../../assets/images/radiologist-hero-2-opt.jpg");
+  height: 91vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-header {
+  font-size: 84px;
+}
+
+.body-header {
+  font-size: 55px;
+}
+
+.hero-text {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-header {
+    font-size: 70px;
+  }
+  .hero-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .hero-header {
+    font-size: 60px;
+  }
+  .hero-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-header {
+    font-size: 50px;
+  }
+  .hero-text {
+    font-size: 16px;
+  }
+}
+
+/* Service Cards */
+
+.service-cards {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; */
+
+  /* margin: 2rem; */
+  display: flex;
+  /* gap: 1rem; */
+  /* grid-template-columns: 1fr; */
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.service-card {
+  /* box-shadow: 0 0 10px 5px #e1e5ee; */
+
+  border-radius: 0.2rem;
+  min-width: 28rem;
+  display: flex;
+}
+
+.card-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75rem, 1fr));
+  grid-gap: 2rem;
+  margin-block: 2rem;
+  padding: 0 1rem;
+  justify-items: center;
+  /* align-items: center; */
+}
+
+@media screen and (mid-width: 600px) {
+
+  .card-holder {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+  }
+}
+
+.debug-border{
+  border: 2px;
+  border-style: dashed;
+}
+
+.center-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
